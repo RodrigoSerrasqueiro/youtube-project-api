@@ -21,8 +21,8 @@ app.use(express.json());
 app.use(cors());
 
 //rotas
-app.use('users', usersRoutes);
-app.use('videos', videosRoutes);
+app.use('/users', usersRoutes);
+app.use('/videos', videosRoutes);
 
 // Conexão com o banco de dados e inicialização do servidor
 const { HOST_USERNAME, HOST_PASSWORD, HOST_CLUSTER, HOST_DATABASE } = process.env;
